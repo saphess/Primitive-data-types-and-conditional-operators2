@@ -1,5 +1,5 @@
-public class Task2 {
-    public static void main(String[] args){
+public class Main {
+    public static void main(String[] args) {
         int initialAccount = 100;
         int replenishment = 1100;
 
@@ -12,12 +12,11 @@ public class Task2 {
         // — итоговый счёт и бонусные рубли рассчитывались правильно"
         //это можно оценивать двояко, но, надеюсь, я правильно поняла условие задания.
 
-        if (replenishment >= 1000)  {
+        if (replenishment > 1000) {
             bonus = replenishment / 100;
             System.out.println("Бонус равен " + bonus + " руб.");
             System.out.println("Итоговая сумма на счету " + (replenishment + initialAccount + bonus) + " руб.");
-        }
-        else {
+        } else {
             System.out.println("Бонусов нет, итоговая сумма на счету " + (replenishment + initialAccount) + " руб.");
         }
     }
